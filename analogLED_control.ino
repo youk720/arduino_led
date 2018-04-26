@@ -9,9 +9,9 @@ void setup(){
   pinMode(9, OUTPUT); //緑LED
   pinMode(10, OUTPUT); //青LED
   pinMode(11, OUTPUT); //赤LED
-  pinMode(A0, INPUT); //赤LED制御
+  pinMode(A2, INPUT); //赤LED制御
   pinMode(A1, INPUT); //緑LED制御
-  pinMode(A2, INPUT); //青LED制御
+  pinMode(A0, INPUT); //青LED制御
 }
 
 void loop(){
