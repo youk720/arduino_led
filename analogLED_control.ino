@@ -16,13 +16,13 @@ void setup(){
 
 void loop(){
   {
-  r = analogRead(A0); //赤LED制御アルゴリズム
+  r = analogRead(A2); //赤LED制御アルゴリズム
   r = r / 4;
   analogWrite(11, r);
   g = analogRead(A1);
   g = g / 4;
   analogWrite(9, g); //緑LED制御アルゴリズム
-  b = analogRead(A2);
+  b = analogRead(A0);
   b = b / 4;
   analogWrite(10, b);  //青LED制御アルゴリズム
   delay(40);
