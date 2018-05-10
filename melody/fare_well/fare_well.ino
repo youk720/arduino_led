@@ -347,101 +347,101 @@ void summer_color(){ //夏色の時間 JR新宿駅4番線発車メロディ
     delay(500);
     }
 
-//   void fare()  { //farewell JR新宿駅2番線発車メロディ https://youtu.be/pE9fJyBUxns?t=1m2s
-//      tone(pin,NOTE_F5,one_haku); //ファ
-//      delay(one_haku);
-//      tone(pin,NOTE_C5,one_haku); //ど
-//      delay(one_haku);
-//      tone(pin,NOTE_C5,eight_haku); //ど
-//      delay(eight_haku);
-//      tone(pin,NOTE_F5,eight_haku); //ファ
-//      delay(eight_haku);
-//      tone(pin,NOTE_E5,eight_haku); //ミ
-//      delay(eight_haku);
-//      tone(pin,NOTE_D5,eight_haku); //レ
-//      delay(eight_haku);
-//      tone(pin,NOTE_E5,one_haku); //み
-//      delay(one_haku);
-//      tone(pin,NOTE_B4,one_haku); //シ
-//      delay(one_haku);
-//      tone(pin,NOTE_C5,eight_haku); //ド
-//      delay(eight_haku);
-//      tone(pin,NOTE_E5,eight_haku); //ミ
-//      delay(eight_haku);
-//      tone(pin,NOTE_D5,eight_haku); //レ
-//      delay(eight_haku);
-//      tone(pin,NOTE_C5,eight_haku); //ド
-//      delay(eight_haku);
-//      tone(pin,NOTE_D5,one_haku); //レ
-//      delay(one_haku);
-//      tone(pin,NOTE_A4,eight_haku); //ラ
-//      delay(eight_haku);
-//      tone(pin,NOTE_GS4,eight_haku); //ラ♯
-//      delay(eight_haku);
-//      tone(pin,NOTE_D5,eight_haku); //レ
-//      delay(eight_haku);
-//      tone(pin,NOTE_C5,one_haku); //ド
-//      delay(one_haku);
-//      tone(pin,NOTE_B4,eight_haku); //シ
-//      delay(eight_haku);
-//      tone(pin,NOTE_C5,one_haku); //ド
-//      delay(one_haku);
-//      tone(pin,NOTE_C5,one_haku); //ド
-//      delay(one_haku);
-//      tone(pin,NOTE_C5,twelv_haku); //ド
-//      delay(twelv_haku);
-//      tone(pin,NOTE_E5,twelv_haku); //ミ
-//      delay(twelv_haku);
-//      tone(pin,NOTE_G5,twelv_haku); //ソ
-//      delay(twelv_haku);
-//      tone(pin,NOTE_C6,one_haku); //ド(オクターブ↑)
-//      delay(one_haku);
-//
-//     delay(1000);
-// }
+   void fare()  { //farewell JR新宿駅2番線発車メロディ https://youtu.be/pE9fJyBUxns?t=1m2s
+      tone(pin,NOTE_F5,one_haku); //ファ
+      delay(one_haku);
+      tone(pin,NOTE_C5,one_haku); //ど
+      delay(one_haku);
+      tone(pin,NOTE_C5,eight_haku); //ど
+      delay(eight_haku);
+      tone(pin,NOTE_F5,eight_haku); //ファ
+      delay(eight_haku);
+      tone(pin,NOTE_E5,eight_haku); //ミ
+      delay(eight_haku);
+      tone(pin,NOTE_D5,eight_haku); //レ
+      delay(eight_haku);
+      tone(pin,NOTE_E5,one_haku); //み
+      delay(one_haku);
+      tone(pin,NOTE_B4,one_haku); //シ
+      delay(one_haku);
+      tone(pin,NOTE_C5,eight_haku); //ド
+      delay(eight_haku);
+      tone(pin,NOTE_E5,eight_haku); //ミ
+      delay(eight_haku);
+      tone(pin,NOTE_D5,eight_haku); //レ
+      delay(eight_haku);
+      tone(pin,NOTE_C5,eight_haku); //ド
+      delay(eight_haku);
+      tone(pin,NOTE_D5,one_haku); //レ
+      delay(one_haku);
+      tone(pin,NOTE_A4,eight_haku); //ラ
+      delay(eight_haku);
+      tone(pin,NOTE_GS4,eight_haku); //ラ♯
+      delay(eight_haku);
+      tone(pin,NOTE_D5,eight_haku); //レ
+      delay(eight_haku);
+      tone(pin,NOTE_C5,one_haku); //ド
+      delay(one_haku);
+      tone(pin,NOTE_B4,eight_haku); //シ
+      delay(eight_haku);
+      tone(pin,NOTE_C5,one_haku); //ド
+      delay(one_haku);
+      tone(pin,NOTE_C5,one_haku); //ド
+      delay(one_haku);
+      tone(pin,NOTE_C5,twelv_haku); //ド
+      delay(twelv_haku);
+      tone(pin,NOTE_E5,twelv_haku); //ミ
+      delay(twelv_haku);
+      tone(pin,NOTE_G5,twelv_haku); //ソ
+      delay(twelv_haku);
+      tone(pin,NOTE_C6,one_haku); //ド(オクターブ↑)
+      delay(one_haku);
 
-// void kimi(){ //前前前世 単一メロディ
-//   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
-//   delay(eight_haku);
-//   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
-//   delay(eight_haku);
-//   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
-//   delay(eight_haku);
-//   tone(pin,NOTE_F7,one_haku); //ファ
-//   delay(one_haku);
-//   tone(pin,NOTE_F7,one_haku); //ファ
-//   delay(one_haku);
-//   tone(pin,NOTE_F7,one_haku); //ファ
-//   delay(one_haku);
-//   tone(pin,NOTE_D7,eight_haku); //レ
-//   delay(eight_haku);
-//   tone(pin,NOTE_C7,eight_haku); //ド
-//   delay(one_haku);
-//   tone(pin,NOTE_C7,eight_haku); //ド
-//   delay(one_haku);
-//   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
-//   delay(one_haku);
-//   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
-//   delay(eight_haku);
-//   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
-//   delay(eight_haku);
-//   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
-//   delay(eight_haku);
-//   tone(pin,NOTE_F7,eight_haku); //ファ
-//   delay(eight_haku);
-//   tone(pin,NOTE_F7,one_haku); //ファ
-//   delay(one_haku);
-//   tone(pin,NOTE_F7,eight_haku); //ファ
-//   delay(eight_haku);
-//   tone(pin,NOTE_F7,eight_haku); //ファ
-//   delay(eight_haku);
-//   tone(pin,NOTE_D7,eight_haku); //レ
-//   delay(eight_haku);
-//   tone(pin,NOTE_D7,eight_haku); //レ
-//   delay(eight_haku);
-//   tone(pin,NOTE_C7,1000); //ド
-//   delay(1000);
-//
-//   delay(500);
-//   }
+     delay(1000);
+ }
+
+ void kimi(){ //前前前世 単一メロディ
+   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
+   delay(eight_haku);
+   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
+   delay(eight_haku);
+   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
+   delay(eight_haku);
+   tone(pin,NOTE_F7,one_haku); //ファ
+   delay(one_haku);
+   tone(pin,NOTE_F7,one_haku); //ファ
+   delay(one_haku);
+   tone(pin,NOTE_F7,one_haku); //ファ
+   delay(one_haku);
+   tone(pin,NOTE_D7,eight_haku); //レ
+   delay(eight_haku);
+   tone(pin,NOTE_C7,eight_haku); //ド
+   delay(one_haku);
+   tone(pin,NOTE_C7,eight_haku); //ド
+   delay(one_haku);
+   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
+   delay(one_haku);
+   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
+   delay(eight_haku);
+   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
+   delay(eight_haku);
+   tone(pin,NOTE_AS6,eight_haku); //ラ#|シ♭
+   delay(eight_haku);
+   tone(pin,NOTE_F7,eight_haku); //ファ
+   delay(eight_haku);
+   tone(pin,NOTE_F7,one_haku); //ファ
+   delay(one_haku);
+   tone(pin,NOTE_F7,eight_haku); //ファ
+   delay(eight_haku);
+   tone(pin,NOTE_F7,eight_haku); //ファ
+   delay(eight_haku);
+   tone(pin,NOTE_D7,eight_haku); //レ
+   delay(eight_haku);
+   tone(pin,NOTE_D7,eight_haku); //レ
+   delay(eight_haku);
+   tone(pin,NOTE_C7,1000); //ド
+   delay(1000);
+
+   delay(500);
+   }
                                                                                                                                                                                                                   
