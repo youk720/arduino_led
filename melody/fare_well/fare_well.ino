@@ -103,11 +103,6 @@ void setup() {
 }
 
 void loop() {
-//  if (analogRead(A0) == HIGH){
-//    sumire();
-//     } else if(analogRead(A1) == HIGH){
-//      summer_color();
-//      }
 sumire();
   }
 
