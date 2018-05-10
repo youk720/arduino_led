@@ -178,6 +178,12 @@ void summer_color(){ //夏色の時間 JR新宿駅4番線発車メロディ
     delay(100);
 
     }
+    void bell(){
+      tone(pin,NOTE_E5,70);
+      delay(70);
+      tone(pin,NOTE_E4,30);
+      delay(30);
+      }
   void sumire(){
     //低音ver
 //    tone(pin,NOTE_D4,eight_haku);
@@ -258,7 +264,7 @@ void summer_color(){ //夏色の時間 JR新宿駅4番線発車メロディ
 //   delay(eight_haku);
 //   tone(pin,NOTE_D4,one_haku);
 //   delay(one_haku);
-    
+
     //高音ver
     tone(pin,NOTE_D6,eight_haku);
     delay(eight_haku);
@@ -439,4 +445,7 @@ void summer_color(){ //夏色の時間 JR新宿駅4番線発車メロディ
 
    delay(500);
    }
-                                                                                                                                                                                                                  
+
+   void lake(){
+     
+   }
