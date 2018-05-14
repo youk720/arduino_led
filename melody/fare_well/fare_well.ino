@@ -342,7 +342,7 @@ void summer_color(){ //夏色の時間 JR新宿駅4番線発車メロディ
    delay(eight_haku);
    tone(pin,NOTE_AS5,eight_haku);
    delay(eight_haku);
-   tone(pin,NOTE_D6,one_haku);
+   tone(pin,NOTE_D6,one_haku);git
    delay(one_haku);
 
     delay(500);
