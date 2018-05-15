@@ -1,26 +1,34 @@
-#define sw A0
 #define blue 9
 #define green 10
+#define sw 7
+
 int val = 0;
 int old_val = 0;
-
-//http://tsukutta.hatenablog.com/entry/2013/05/30/150231
-
-
-void setup() {
+boolean count_x = false;
+ 
+void setup(){
   pinMode(blue, OUTPUT);
   pinMode(green, OUTPUT);
-  pinMode(sw, INPUT);
+  pinMode(sw, INPUT_ PULLUP);
 
   Serial.println(9600);
-}
+ }
 
-void loop() {
-  int value = analogRead(sw);
+void loop(){
+  val = digitalRead(sw);
+  Serial.println(val);
+  
+  if(val == HIGH && old_val == LOW){
+   count_x = !count_x;
+    } 
+
+    old_val = val;
     
-    if(value == HIGH){
-      digitalWrite(blue, HIGH);
-      }else{
-      digitalWrite(green, HIGH);
+  if (count_x){
+    digitalWrite(blue, HIGH);
+    digitalWrite(green, LOW);
+    }else{
+    digitalWrite(blue, LOW);
+    digitalWrite(green, HIGH);
       }
-}
+  }
