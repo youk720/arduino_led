@@ -1,6 +1,6 @@
 #define blue 9
 #define green 10
-#define sw 7
+#define sw 8
 
 int val = 0;
 int old_val = 0;
@@ -9,7 +9,7 @@ boolean count_x = false;
 void setup(){
   pinMode(blue, OUTPUT);
   pinMode(green, OUTPUT);
-  pinMode(sw, INPUT_ PULLUP);
+  pinMode(sw, INPUT);
 
   Serial.println(9600);
  }
