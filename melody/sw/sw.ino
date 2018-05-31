@@ -89,8 +89,14 @@
 #define NOTE_D8  4699
 #define NOTE_DS8 4978
 
+//(440) * (2 ** ((c - 69 +12) / 12);
+//c = 60~
+
+int oc = 1;
+
 //接続系
-#define sw_1 A0 //スイッチのピン定義 
+#define sw_1 A0 //スイッチのピン定義
+#define sw_2 A1 
 #define speaker 10 //スピーカーピン
 
 void setup() {
@@ -100,55 +106,58 @@ void setup() {
 
 void loop() {
   int sw = analogRead(sw_1); //ピン1番の定義
+  int sw_oc = analogRead(sw_2); //オクターブ
 //  Serial.println(sw);
   int x;
+  int oc = 1;
 
   String key[] = {
     "non touch", "C# or D♭", "D# or E♭", "F# or G♭", "G# or A♭", "A# or B♭", "C+", "B", "A", "G", "F", "E", "D", "C-"
 };
     
+    
       if(sw >=940 && sw <= 960){
       x = 13; 
-      tone(speaker, NOTE_C5);
+      tone(speaker, NOTE_C4 * oc);
       }else if(sw >= 936 && sw <= 940){
       x = 12;
-      tone(speaker, NOTE_D5);
+      tone(speaker, NOTE_D4 * oc);
       }else if(sw >= 925 && sw <= 934){
       x = 11;
-      tone(speaker, NOTE_E5);
+      tone(speaker, NOTE_E4 *oc);
       }else if(sw >= 916 && sw <= 926){
       x = 10;
-      tone(speaker, NOTE_F5);
+      tone(speaker, NOTE_F4 * oc);
       }else if(sw >= 900 && sw <= 915){
       x = 9;
-      tone(speaker, NOTE_G5);
+      tone(speaker, NOTE_G4 *oc);
       }else if(sw >= 885 && sw <= 899){
       x = 8;
-      tone(speaker, NOTE_A5);
+      tone(speaker, NOTE_A4 * oc);
       }else if(sw >= 860 && sw <= 880){
       x = 7;
-      tone(speaker, NOTE_B5);
+      tone(speaker, NOTE_B4 * oc);
       }else if(sw >= 850 && sw <= 865){
       x = 6;
-      tone(speaker, NOTE_C6);
+      tone(speaker, NOTE_C5 * oc);
       }else if(sw >= 800 && sw <= 830){
       x = 5;
-      tone(speaker, NOTE_AS5);
+      tone(speaker, NOTE_AS4 * oc);
       }else if(sw >= 700 && sw <= 800){
       x = 4;
-      tone(speaker, NOTE_GS5);
+      tone(speaker, NOTE_GS4 * oc);
       }else if(sw >= 600 && sw <= 700){
       x = 3;
-      tone(speaker, NOTE_FS5);
+      tone(speaker, NOTE_FS4 * oc);
       }else if(sw >= 500 && sw <= 600){
       x = 2;
-      tone(speaker, NOTE_DS5);
+      tone(speaker, NOTE_DS4 * oc);
       }else if(sw >= 0 && sw <= 10){
       x = 1;
-      tone(speaker, NOTE_CS5);
+      tone(speaker, NOTE_CS4 * oc);
       }else{
         tone(speaker, -5000);
-        noTone(speaker)
+        noTone(speaker);
         }
       
       Serial.println(x);
@@ -169,7 +178,14 @@ void loop() {
      * 12D=936~940
      * 13C=940~960
      * 
+     * 
+     * 
      */
+     if(sw_oc >= 600 && sw_oc <= 700){
+      oc = oc + 1;
+      }else if(sw_oc >= 500 && sw_oc <= 600){
+      oc = oc - 1;
+      }
      
 }
       
